@@ -24,7 +24,7 @@ public class Servicio {
 
     public Cita actualizar(Long id, Cita cit) {
         return repo.findById(id).map(existing -> {
-            existing.setIdHor(cit.getIdHor());
+            existing.setIdSlo(cit.getIdSlo());
             existing.setIdPac(cit.getIdPac());
             existing.setIdEsp(cit.getIdEsp());
             existing.setIdMed(cit.getIdMed());
